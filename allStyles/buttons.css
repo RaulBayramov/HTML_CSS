@@ -1,0 +1,100 @@
+.subscribe_button{ /*
+    "Targeting" (hedefleme), CSS'de veya genel olarak web geliştirme alanında, belirli HTML öğelerini veya belirli özelliklere sahip öğeleri seçme ve onlara stil uygulama işlemidir. Hedefleme, bir öğenin stilini tanımlamak veya bir öğeye etkileşim eklemek için kullanılır.
+            Bu CSS selektörleri(ornek: .subscribe_button{}), belirli HTML öğelerini hedeflemek ve belirli bir stil uygulamak için kullanılabilir. CSS selektörleri, 
+            web sayfalarını biçimlendirmek ve görünümünü özelleştirmek için güçlü bir araçtır.*/
+           background-color: rgb(204, 0, 0); /*
+            CSS property, bir HTML öğesinin belirli bir özelliğini tanımlamak için kullanılan bir terimdir. CSS özellikleri, bir HTML öğesinin görünümünü, konumunu veya davranışını değiştirmek için kullanılır.
+            Bir CSS özelliği, bir öğenin stilini tanımlayan ve belirli bir değerle ilişkilendirilen bir anahtar-kelime çiftidir. Örneğin, bir metnin rengini belirlemek için color özelliği kullanılabilir ve bu özelliğe bir renk değeri atanır.
+            CSS value: "CSS value" (CSS değeri), CSS özelliklerine atanan belirli bir değeri ifade eder. CSS'de bir özellik (property) ve bu özelliğe atanmış bir değerden (value) oluşan bir çift bulunur.*/
+            color: white; /* Paragraf metninin rengini beyaz olarak ayarlar */
+            border: none; /* kenarlık siler */
+            font-size: 15px;
+            border-radius: 3px;
+            cursor: pointer;
+           /* height: 36px;
+            width: 65px;       icerigin boyutlarini gozardi etdigi icin onerilmeyen kullanim*/
+            margin-right: 12px; /*CSS'de bir öğenin sağ kenar boşluğunu belirtmek için kullanılan bir stil kuralıdır. Bu stil kuralı, bir öğenin sağ tarafındaki boşluğu, belirtilen piksel (px) değeri kadar genişletecektir.*/
+            transition: opacity 0.25s; /*"Transitions", CSS'de bir öğenin belirli bir özelliğinin bir değerden diğerine pürüzsüz bir şekilde geçişini tanımlamak için kullanılan bir özelliktir.*/
+            padding-top: 10px; /*padding bir öğenin içerisindeki içeriğin kenarlara olan uzaklığını ayarlar.*/
+            padding-bottom: 10px;/*Padding değerleri, dört kenar için ayrı ayrı tanımlanabilir ya da tek bir değer kullanılarak tüm kenarlara aynı uzaklık atanabilir.*/
+            padding-left: 16px;
+            padding-right: 16px;
+            /* CSS box model:display:
+            CSS box model, bir HTML öğesinin dört temel bileşenini (içerik kutusu, dolgu, kenarlık ve dış boşluk) tanımlar. Bir HTML öğesinin stilini belirlerken, bu dört bileşeni dikkate almak önemlidir çünkü öğenin nasıl yerleştirildiğini ve diğer öğelerle nasıl etkileşimde bulunduğunu belirler.
+    CSS box model, bir öğenin genişliğini ve yüksekliğini hesaplarken bu dört bileşeni içerir. Temel olarak, bir öğenin genişliği ve yüksekliği, içeriğin boyutuna, dolguya, kenarlığa ve dış boşluğa eklenen değerlerin toplamıdır.
+    CSS box modeldeki bileşenler şunlardır:
+    İçerik kutusu (Content Box): HTML öğesinin içeriğini içeren bölümdür. Metin, resim veya diğer içerik bu kutuda bulunur. İçerik kutusunun boyutu, öğenin width (genişlik) ve height (yükseklik) özellikleriyle belirlenir.
+    Dolgu (Padding): İçerik kutusuyla içeriğin arasındaki boşluğu ifade eder. Dolgu, içerik kutusunun etrafına eklenen alanı temsil eder. Dolgu, padding-top, padding-right, padding-bottom, padding-left gibi özelliklerle tanımlanır.
+    Kenarlık (Border): İçerik kutusunu çevreleyen sınırları ifade eder. Kenarlık, öğenin kenarlarının etrafında bir çizgi oluşturur. Kenarlık, border-top, border-right, border-bottom, border-left gibi özelliklerle ve bunların özelliklerini bir araya getiren kısayol özelliklerle tanımlanır.
+    Dış boşluk (Margin): HTML öğesinin diğer öğelerden uzaklığını ifade eder. Yani, öğenin dışındaki boşluktur. Dış boşluk, öğenin etrafında diğer öğelerle olan mesafeyi belirtir. Dış boşluk, margin-top, margin-right, margin-bottom, margin-left gibi özelliklerle tanımlanır.
+    Aşağıdaki şekil, CSS box modelin nasıl göründüğünü gösterir:
+     ____________________________
+    |          Margin            |
+    |   ______________________   |
+    |  |        Border        |  |
+    |  |   ________________   |  |
+    |  |  |    Padding     |  |  |
+    |  |  |                |  |  |
+    |  |  |   Content Box  |  |  |
+    |  |  |                |  |  |
+    |  |  |________________|  |  |
+    |  |______________________|  |
+    |____________________________|
+    
+            */
+            vertical-align: top;
+        }
+        .subscribe_button:hover{ /*"Pseudo class" (yapay sınıf), CSS'de belirli durumları veya durumları tanımlamak için kullanılan özel bir seçici türüdür. Bir CSS pseudo class'ı, belirli bir HTML öğesinin belirli bir durumda olduğunu belirtmek için kullanılır. 
+        Örneğin, bir bağlantının ziyaret edildiğinde, bir öğenin üzerine gelindiğinde veya bir form elemanı odaklandığında belirli bir stilin uygulanmasını sağlamak için pseudo class'lar kullanılabilir*/
+            opacity: 0.8; /*"Opacity", bir öğenin saydamlığını (opaklık) ayarlamak için kullanılan bir CSS özelliğidir. Opacity, bir öğenin ne kadar görünür veya ne kadar görünmez olduğunu belirler.*/
+            /*:hover: Bir öğenin üzerine gelindiğinde uygulanır.*/
+        }
+        .subscribe_button:active{/*Bir öğe tıklandığında uygulanır.*/
+            opacity: 0.5;
+        }
+        .join_button{
+            background-color: white;
+            color: rgb(8, 83, 188);
+            border-color: rgb(8, 83, 188);
+            border-radius: 2px;
+            border-width: 0.75px;
+            border-style: solid;/*"Solid color" (düz renk), tek bir rengin homojen olarak uygulandığı bir renk tarzını ifade eder.*/
+            font-size: 15px;
+            cursor: pointer;
+            margin-right: 12px;
+            transition: background-color 0.15s, color 0.15s;
+            padding-top: 9px; /*padding bir öğenin içerisindeki içeriğin kenarlara olan uzaklığını ayarlar.*/
+            padding-bottom: 9px;/*Padding değerleri, dört kenar için ayrı ayrı tanımlanabilir ya da tek bir değer kullanılarak tüm kenarlara aynı uzaklık atanabilir.*/
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+        .join_button:hover{
+            background-color: rgb(8, 83, 188);
+            color: white;
+            
+        }
+        .join_button:active{
+            opacity: 0.65;
+        }
+        .tweet_button{
+            color: white;
+            font-weight: bold;
+            border-style: solid;/*"Solid color" (düz renk), tek bir rengin homojen olarak uygulandığı bir renk tarzını ifade eder.*/
+            font-size: 15px;
+            cursor: pointer;
+            background-color: rgb(29, 155, 240);
+            border-radius: 20px;
+            border: none;
+            transition: box-shadow 0.15s;
+            padding-top: 10px; /*padding bir öğenin içerisindeki içeriğin kenarlara olan uzaklığını ayarlar.*/
+            padding-bottom: 10px;/*Padding değerleri, dört kenar için ayrı ayrı tanımlanabilir ya da tek bir değer kullanılarak tüm kenarlara aynı uzaklık atanabilir.*/
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+        .tweet_button:hover{
+            box-shadow: 1px 5px 6px rgba(0, 0, 0, 0.2); /*Bu CSS kodu, bir kutuya gölge efekti (box shadow) uygulamak için kullanılır.
+            1px: Gölgenin yatay (x eksenindeki) konumu. 
+            5px: Gölgenin dikey (y eksenindeki) konumu. 
+            6px: Gölgenin bulanıklık (blur) miktarı.
+            rgba(0, 0, 0, 0.15): Gölgenin rengi(0, 0 , 0) ve opaklığı(0.15).*/
+        }

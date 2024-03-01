@@ -1,82 +1,37 @@
+<!DOCTYPE html><!-- ifadesi bir HTML belgesinin başında bulunur ve belgenin HTML5 standardına uygun olduğunu belirtir. Bu ifade, web tarayıcılarına belgenin hangi HTML sürümüne uygun olduğunu bildirir ve tarayıcıların belgeyi doğru şekilde işlemesine yardımcı olur.-->
+<html><!--etiketi, bir HTML belgesinin başlangıcını ve sonunu belirtir. Tüm HTML içeriğinin bu etiketler arasında olması gerekir. Bu etiketler, tarayıcıya belgenin HTML formatında olduğunu ve tarayıcının belgeyi doğru şekilde işlemesi gerektiğini belirtir.-->
+    <!--"Nesting": genellikle programlama ve belge oluşturma bağlamında kullanılan bir terimdir. Genel olarak, "nesting" (yerleştirme), bir öğenin veya yapısal birimlerin başka bir öğe veya yapısal birim içine yerleştirilmesini ifade eder.-->
+    <head><!--<head> bölümü, HTML belgesinin başlık bilgilerini içerir. Bu bölümde genellikle <title> öğesiyle belge başlığı belirtilir ve CSS ve JavaScript dosyaları gibi dış kaynaklar eklenir.-->
+        <!--title etiketi, bir HTML belgesinin başlığını belirtmek için kullanılır. Tarayıcılar, bu etiket içindeki metni belge başlığı olarak gösterirler. Tarayıcı sekmesinde ve arama motoru sonuçlarında görüntülenen başlık olarak da kullanılır.-->
+        <title>     
+                Text_Styles
+        </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel = "stylesheet" href = "allStyles/text.css"><!--Bu HTML kodu, bir dış CSS dosyasını HTML belgesine bağlamak için kullanılan bir <link> öğesini temsil eder. Bu, tarayıcıya belgenin stil bilgilerini içeren bir dış CSS dosyasını yüklemesini sağlar.
+            <link> öğesinin rel özelliği, bağlanan dosyanın belgenin neyle ilişkili olduğunu belirtir. "stylesheet" değeri, bağlanan dosyanın bir stil sayfası olduğunu belirtir.
+            href özelliği ise bağlanacak dosyanın yolunu belirtir.-->
+            <!--eger css dosyasi bir folder icerisindeyse folder_ismi/dosya_ismi kullanimiyla erisiriz-->
+    </head>
+    <body>
+        <p class="video_title">
+            Talking Tech and AI with Google CEO Sundar Pichai!
+        </p>
+        <p class = "video_stats">
+            3.4M views &#183 6 months ago <!--HTML entity'lerin kullanılması, belirli karakterlerin tarayıcılar tarafından doğru şekilde işlenmesini sağlar ve belgelerin uygun şekilde gösterilmesine yardımcı olur.-->
+        </p>
+        <p class = "video_author">
+            Marques Brownlee &#10003 <!--HTML entity'ler, "&" işareti ile başlayan ve ";" işareti ile sonlanan özel kodlar olarak temsil edilirler. googlda gerekli entiy ismiyle aratarak bula biliriz-->
+        </p>
+        <p class  = "video_description">
+            Talking tech and AI on the heels of Google I/O. Also a daily driver phone reveal from Google's CEO. Shoutout to Sundar!
+        </p>
+        <p class = "apple_text">
+            Shop early for the best selection of holiday favourites. <span class = "shop_link">Shop now &gt</span><!--text element <span>: Metni belirli bir alanda gruplamak için kullanılır. Genellikle içinde stil veya işlem uygulanacak küçük metin parçaları için kullanılır.-->
+        </p>
+    </body><!--bölümü, HTML belgesinin görünen içeriğini içerir. Burada kullanıcıya gösterilecek her şey, metin, resimler, bağlantılar, form elemanları ve diğer öğeler yer alır.-->
+</html>
 <!--
     Text toolbarda olan her seyi googllayarak CSS-dede yapa biliriz
 -->
-<style>
-p{ 
-    /*CSS spesifikliği (specificity):
-    CSS spesifikliği (specificity), CSS kurallarının öncelik sırasını belirleyen bir kavramdır. Bir CSS kuralının ne kadar spesifik olduğu, bu kuralın ne kadar öncelikli olduğunu belirler. Bu, aynı öğeye uygulanan birden fazla CSS kuralı arasında çakışmaları çözmek için kullanılır.*/
-    font-family: Arial;/*her selektorde(bizim ornekde paragraph selektorunde) ayni islem yapiliyorsa gereksiz satir kullanmama icin ana selektore(a, p, button ve.s) ekelene bilir*/
-    margin-top: 0 ;/*class name selector > element name selector(priority(specificity) bakimindan)*/
-}
-.video_title{
-    font-size: 18px;
-    font-weight: bold;   /* Metnin kalın (bold) olarak biçimlendirilmesi */
-    width: 280px;        /* Öğenin genişliğinin 300 piksel olarak ayarlanması */
-    line-height: 24px;   /* Satır yüksekliğinin 24 piksel olarak belirlenmesi */
-    margin-bottom: 5px;
-}
-.video_stats{
-    font-size: 14px;
-    margin-bottom: 16px;
-    color: #606060;
-}
-.video_author{
-    font-size: 14px;
-    color: #606060;
-    margin-bottom: 20px;
-}
-.video_description{
-    font-size: 14px;
-    width: 280px;
-    line-height: 22px;
-    margin-bottom: 100px;
-}
-.apple_text{
-background-color: rgb(227, 65, 64);
-/*box-sizing, bir HTML öğesinin kutu modelinin nasıl hesaplanacağını belirten bir CSS özelliğidir. Bu özellik, bir öğenin genişliği ve yüksekliği hesaplanırken içerik, dolgu ve kenarlık boyutlarının dahil edilip edilmeyeceğini kontrol eder.
-content-box: Bu varsayılan değerdir. Genişlik ve yükseklik, sadece içerik kutusunun boyutunu içerir. Dolgu ve kenarlık genişliği bu değerlere dahil edilmez.*/
-box-sizing: border-box; /* Genişlik ve yükseklik, içerik kutusunun boyutunu, dolgu ve kenarlık genişliğini içerir. Yani, toplam kutu boyutunu belirtir. Bu, özellikle düzenleme ve tasarımda daha tutarlı sonuçlar elde etmek için faydalı olabilir, çünkü içerik boyutu dışındaki kutu boyutları da göz önünde bulundurulur.*/
-color: rgb(255, 255, 255);
-display: block;
-font-family: Arial;
-font-size: 14px;
-text-align: center;/*"Text-align" CSS özelliği, bir öğenin içindeki metnin yatay hizalamasını belirtir. Metnin sağa, sola, ortaya veya iki kenara yaslanmasını sağlar. */
-padding-top: 18px;
-padding-bottom: 18px;
-margin-bottom: 50px;
-}
-/*"Text element":
-terimi genellikle HTML veya XML belgelerinde metni temsil etmek için kullanılan bir terimdir. HTML'de metin öğeleri, web sayfalarında görünen metni tanımlamak için kullanılır.
-Bazı yaygın metin öğeleri şunlardır:
-<p>: Bir paragrafı tanımlar.
-<span>: Metni belirli bir alanda gruplamak için kullanılır. Genellikle içinde stil veya işlem uygulanacak küçük metin parçaları için kullanılır.
-<h1>, <h2>, <h3>, <h4>, <h5>, <h6>: Başlıkları temsil eder. Sayfa başlığından alt başlıklara kadar farklı düzeyde başlıkları belirtmek için kullanılır.
-<a>: Bir bağlantı oluşturur.
-<strong> veya <b>: Metni kalın olarak biçimlendirir.
-<em> veya <i>: Metni italik olarak biçimlendirir.
-<ul> ve <ol>: Sırasız ve sıralı liste öğelerini tanımlar.
-<li>: Liste öğelerini tanımlar.
-Bu öğeler, bir web sayfasındaki metni düzenlemek, biçimlendirmek ve yapılandırmak için kullanılır. Her biri belirli bir amaca hizmet eder ve metni farklı şekillerde temsil eder. 
-Metin öğeleri, CSS ile birlikte kullanılarak web sayfalarının tasarımı ve düzeni için önemli bir rol oynar.*/
-.shop_link{
-    cursor: pointer;
-}
-.shop_link:hover{
-text-decoration: underline;
-}
-</style>
-<p class="video_title">
-    Talking Tech and AI with Google CEO Sundar Pichai!
-</p>
-<p class = "video_stats">
-    3.4M views &#183 6 months ago <!--HTML entity'lerin kullanılması, belirli karakterlerin tarayıcılar tarafından doğru şekilde işlenmesini sağlar ve belgelerin uygun şekilde gösterilmesine yardımcı olur.-->
-</p>
-<p class = "video_author">
-    Marques Brownlee &#10003 <!--HTML entity'ler, "&" işareti ile başlayan ve ";" işareti ile sonlanan özel kodlar olarak temsil edilirler. googlda gerekli entiy ismiyle aratarak bula biliriz-->
-</p>
-<p class  = "video_description">
-    Talking tech and AI on the heels of Google I/O. Also a daily driver phone reveal from Google's CEO. Shoutout to Sundar!
-</p>
-<p class = "apple_text">
-    Shop early for the best selection of holiday favourites. <span class = "shop_link">Shop now &gt</span>
-</p>
