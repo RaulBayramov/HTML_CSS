@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Youtobe</title>
+        <style>
+            .thumbnail-1{
+                width: 300px;
+                /*object-fit: contain;object-fit, CSS ile kullanılan bir özelliktir ve bir resmin veya medya öğesinin (video, iframe, vb.) bir konteyner içinde nasıl uygun şekilde sığdırılacağını belirler. Bu özellik, genellikle bir <img> etiketi veya bir background-image olarak kullanılan resimler için kullanılır.*/
+                /*object-fit özelliği, aşağıdaki değerlerden birini alabilir:
+fill: Resim, orijinal boyutunu korumadan, konteynerin boyutuna tam olarak sığacak şekilde gerilir veya sıkıştırılır. Oranlar bozulabilir.
+contain: Resim, orijinal boyutunu koruyarak, konteynerin içine sığacak şekilde boyutlandırılır. Boşluklar olabilir.
+cover: Resim, konteynerin içine tam olarak sığacak şekilde boyutlandırılır ve kesilmiş kısımlar olabilir. Oranlar korunur.
+none: Resim, boyutlandırılmaz ve orijinal boyutunda görünür. Eğer resim konteynerden büyükse, kesilebilir.
+scale-down: Resim, none ve contain değerleri arasında en uygun olanı seçilerek boyutlandırılır.*/
+                /*object-position: center bottom;object-position, CSS ile kullanılan bir özelliktir ve bir resmin veya medya öğesinin (video, iframe, vb.) konteyner içinde hangi konumda yer alacağını belirler. */
+            }
+            .search_bar{
+                border: 0.8px;
+                border-radius: 18px;
+                border-color: black;
+                margin-left: 10px;
+                font-size: 20px;
+                padding: 5px;
+                height: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <img class="thumbnail-1" src = "thumbnails/thumbnail-1.webp"><!--Bu HTML kodu, bir web sayfasında "thumbnail-1.webp" adlı bir resmi görüntülemek için <img> etiketini kullanır. <img> etiketi, bir görüntünün veya resmin belirli bir web sayfasında görüntülenmesini sağlar.
+         src özelliği, görüntünün dosya yolunu veya URL'sini belirtir. Bu örnekte "thumbnail-1.webp" dosyasının bulunduğu yolu veya web adresini belirtir.-->
+        <input class="search_bar" type="text" placeholder="Search">
+        </body>
+</html>
