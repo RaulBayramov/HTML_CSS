@@ -1,0 +1,428 @@
+
+<!-- Exercise 1
+<style>
+    .a1{
+    font-size: 16px;
+    color: rgb(0, 145, 255);
+    transition: color 0.15s;
+   }
+   .a1:hover{
+    color: rgb(255, 174, 0);
+   }
+   .p1{
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 18px;
+   }
+   .p2{
+    color: green;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 20px; 
+    margin-bottom: 17px; 
+   }
+   .p3{
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 17px;
+   }
+   .b1{
+     background-color: rgb(255, 204, 0);
+     height: 28px;
+     width: 115px;
+     border: none;
+     border-radius: 30px;
+     font-size: 14px;
+     margin-right: 5px;
+     transition: color 0.15s;
+   }
+   .b1:hover{
+     opacity: 0.8;
+   }
+   .b1:active{
+     opacity: 0.5;
+   }
+   .b2{
+     background-color: rgb(255, 166, 0);
+     height: 28px;
+     width: 115px;
+     border: none;
+     border-radius: 30px;
+     font-size: 14px;
+     transition: color 0.15s;
+   }
+   .b2:hover{
+     opacity: 0.8;
+   }
+   .b2:active{
+     opacity: 0.5;
+   }
+
+</style>
+<a href = "https://www.amazon.com/Georgia-Europe/s?k=Georgia+Europe", target="_blank" class="a1">
+    Back to Amazon
+</a>
+<p class="p1">Nike Black Running Shoes</p>
+<p class="p2">$39 - in stock.</p>
+<p class="p3">Free delivery tomorrow.</p>
+<button class="b1">
+    Add to chart
+</button>
+<button class="b2">
+    Buy now
+</button>
+-->
+<!--Exercise 2
+<style>
+p{
+  font-family: Arial;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+.New{
+  color: gold;
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+.product{
+  font-size: 22px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+.add_text{
+  font-size: 38px;
+  text-align: center;
+  font-weight: bold;
+}
+.price{
+  color: rgb(63, 60, 60);
+  text-align: center;
+  font-size: 15px;
+}
+.divv{
+  width: 100%;
+    text-align: center;
+}
+.buy_button{
+  color: white;
+  font-size: 14px;
+  font-family: Arial;
+  background-color: rgb(0, 110, 255);
+  padding-bottom: 8px;
+  padding-top: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: none;
+  border-radius: 15px;
+  display: inline-block; /* Blok öğeyi satır içi bloğa dönüştür */
+  margin: 0 auto;
+}
+</style>
+<p class = "New">
+  New
+</p>
+<p class = "product">
+  MacBook Pro
+</p>
+<p class = "add_text">
+  Supercharged for pros.
+</p>
+<p class = "price">
+  From &dollar;1999
+</p>
+<div class ="divv">
+  <button class="buy_button">
+  Buy
+</button>
+</div>
+-->
+<!--Exercise 3
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cat photos</title>
+    <style>
+.thumbnail2{
+  width: 150px;
+  height: 150px;
+  object-fit: fill; 
+  border-radius: 200px;
+  border: 0;
+}
+.thumbnail3{
+  width: 150px;
+  height: 150px;
+  object-fit: contain; 
+  object-position: center;
+  border: 0;
+}
+.thumbnail4{
+  width: 200px;
+  height: 150px;
+  object-fit: cover; 
+  border: 0;
+  border-radius: 50px;
+}
+    </style>
+  </head>
+  <body>
+    <img class="thumbnail2" src="thumbnails/kitty-cat-kitten-pet-45201.jpeg">
+    <img class="thumbnail3" src="thumbnails/kitty-cat-kitten-pet-45201.jpeg">
+    <img class="thumbnail4" src="thumbnails/kitty-cat-kitten-pet-45201.jpeg">
+  </body>
+</html>
+-->
+<!--Exercise 4-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercise 3</title>
+  <style>
+    p{
+      font-family: Arial;
+    }
+   .text1{
+    font-size: 14px;
+    color: rgb(81, 81, 81);
+    margin-bottom: 4px;
+   }
+   .search_bar{
+    font-size: 14px;
+    width: 345px;
+    height: 24px;
+    margin-bottom: 5px;
+   }
+   .text2{
+    font-size: 14px;
+    color: rgb(81, 81, 81);
+    margin-bottom: 20px;
+   }
+   .agree_join_button{
+    font-size: 20px;
+    color: white;
+    border: 0;
+    border-radius: 55px;
+    background-color: rgb(0, 149, 255);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 119px;
+    padding-right: 119px;
+    
+   }
+  </style>
+</head>
+<body>
+  <p class="text1">
+    Email
+  </p>
+  <input class ="search_bar" type="text" placeholder="">
+  <p class="text2">
+    By clicking Agree & Join, you agree to the Privacy Policy.
+  </p>
+  <button class="agree_join_button">
+    Agree & Join
+  </button>
+</body>
+</html>
+<!--Exercise 5
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Exercise 5
+    </title>
+    <style>
+.profile_photo{
+  width: 50px;
+  height: 50px;
+  object-fit: fill;
+  border: 0;
+  border-radius: 50px;
+  margin-left: 10px;
+  margin-right: 15px;
+}
+.container{
+  display: flex;
+  align-items: center; /* Metin ve resmi dikey olarak hizalar */
+}
+.text5{
+  font-size: 16px;
+  font-family: Arial;
+  color: grey;
+  margin-right: 100px;
+}
+.button{
+  font-size: 16px;
+  color: white;
+  background-color: rgb(0, 98, 255);
+  border: 0;
+  border-radius: 26px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img class="profile_photo" src="thumbnails/kitty-cat-kitten-pet-45201.jpeg">
+    <p class="text5">
+      What&#39;s happening?
+    </p>
+    <button class="button"><strong>Tweet</strong></button>
+    </div>
+  </body>
+</html>
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Exercise 6
+    </title>
+    <style>
+      body{
+        font-family: Arial, sans-serif;
+        background-color: #f0f2f5;
+        margin: 0;
+        padding: 0;
+      }
+      .container{
+        max-width: 320px;  /*max-width: 400px; CSS özelliği, bir öğenin maksimum genişliğini belirtir. Bu özellik, bir öğenin genişliğinin belirli bir piksel değerinden fazla olamayacağını belirler.*/
+/*margin: 50px auto; CSS özelliği, bir öğenin dış kenar boşluklarını (margin) belirtir. İlk değer üst ve alt kenar boşluklarını, ikinci değer ise sol ve sağ kenar boşluklarını belirtir.
+50px değeri, üst ve alt kenar boşluklarının 50 piksel olacağını belirtir.
+auto değeri ise, sol ve sağ kenar boşluklarının otomatik olarak hesaplanacağını belirtir. Böylece öğe yatay olarak ortalanır.*/
+        margin: 50px, auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);/*box-shadow CSS özelliği, bir öğenin kenarlarına gölge eklemek için kullanılır. Bu özellik, öğenin konturunu veya hacmini belirginleştirmek ve derinlik efekti oluşturmak için kullanılır.
+        box-shadow: horizontal-offset vertical-offset blur spread color;
+horizontal-offset: Gölgenin yatay konumunu belirtir.
+vertical-offset: Gölgenin dikey konumunu belirtir.
+blur: Gölgenin bulanıklık miktarını belirtir.
+spread: Gölgenin yayılma miktarını belirtir.
+color: Gölgenin rengini belirtir.
+        */
+      }
+      [type="text"],
+      .sign_up{
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-sizing: border-box;/*box-sizing CSS özelliği, bir öğenin boyutlarının nasıl hesaplanacağını belirler. Özellikle, öğenin içeriği, dolgu (padding), kenarlık (border) ve dolgu (padding) alanlarının boyutları göz önüne alınarak hesaplanabilir. Bu özellik, web tasarımında öğelerin genişlik ve yüksekliklerini daha tutarlı bir şekilde kontrol etmek için kullanılır.
+Bu özelliğin alabileceği değerler şunlardır:
+content-box: Bu varsayılan değerdir. Öğenin genişliği ve yüksekliği, içerik kutusu içeriğini içerir. Dolgu (padding) ve kenarlık (border) eklenmez.
+padding-box: Öğenin genişliği ve yüksekliği, içerik kutusu ve dolgu (padding) alanını içerir. Ancak, kenarlık (border) genişliğe dahil edilmez.
+border-box: Öğenin genişliği ve yüksekliği, içerik kutusu, dolgu (padding) alanı ve kenarlık (border) alanını içerir. Bu, öğenin belirlenen genişlik ve yüksekliğin içeriği, dolgu ve kenarlık alanlarını içereceği anlamına gelir. Bu, daha öngörülebilir bir davranış sağlar, çünkü dolgu ve kenarlık ölçüleri, öğenin toplam boyutu içinde zaten yer alır.*/
+        font-size: 14px;
+      }
+      .first_name1,
+      .first_name2{
+        display: inline-block;
+        max-width: 157px;
+      }
+      .first_name1{
+          margin-right: 1px;
+      }
+      button:hover {
+        background-color: #0e5a9d;
+      }
+      .sign_up{
+        background-color: #1877f2;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-weight: bold;
+        font-size: 16px;
+      }
+
+      input[type="text"]::placeholder {
+     color:  #999; 
+}
+
+    </style>
+  </head>
+  <body>
+    <div class = "container">
+    <input class ="first_name1" type="text" placeholder="First name">
+    <input class ="first_name2" type="text" placeholder="First name">
+    <input class ="email" type="text" placeholder="Email">
+    <button class ="sign_up">Sign Up</button>
+  </div>
+  </body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Exercise 7
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+    p{
+      width: 100%;
+      text-align: center;
+    }
+     span{
+      font-family: Catull;
+      font-size: 90px;
+     }
+     .G_letter{
+      color: rgb(0, 179, 255);
+     }
+     .o1_letter{
+      color: red;
+     }
+     .o2_letter{
+      color: rgb(255, 230, 0);
+     }
+     .g_letter{
+      color: rgb(0, 179, 255);
+     }
+     .l_letter{
+      color: green;
+     }
+     .e_letter{
+      color: red;
+     }
+     .search_bar {
+      display: block;
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto;
+      font-size: 14px;
+      padding: 15px;
+      border: none;
+      border-color:azure;
+      border-radius: 25px;
+      box-sizing: border-box;
+      box-shadow: 1px 5px 6px rgba(0, 0, 0, 0.2);
+      margin-top: 40px;
+     }
+     .search_bar:active{
+       opacity: 0.8;
+     }
+    </style>
+  </head>
+  <body>
+    <p class = "google">
+      <span class="G_letter">G</span><span class="o1_letter">o</span><span class="o2_letter">o</span>
+      <span class="g_letter">g</span><span class="l_letter">l</span><span class="e_letter">e</span>
+      <input class = "search_bar" type="text" placeholder="Search Googe or type a URL">
+    </p>
+  </body>
+</html>

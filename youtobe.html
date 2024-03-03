@@ -2,7 +2,32 @@
 <html>
     <head>
         <title>Youtobe</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
         <style>
+            p{
+                font-family: Roboto;
+            }
+            .search_bar{/*img input gibi elementler default olarak inline_blockdur*/
+                border: 0.8px;
+                border-radius: 18px;
+                border-color: black;
+                margin-left: 10px;
+                font-size: 20px;
+                padding: 5px;
+                height: 15px;
+                /*display:
+CSS'de "display" özelliği, bir HTML öğesinin görüntülenme davranışını kontrol etmek için kullanılır. Bu özellik, bir öğenin nasıl yerleştirildiği, nasıl düzenlendiği ve nasıl göründüğü üzerinde önemli bir etkiye sahiptir.
+"display" özelliği, farklı değerler alabilir ve bu değerler öğenin nasıl görüneceğini belirler. En yaygın kullanılan "display" özelliklerinden bazıları şunlardır:
+block: Öğeyi blok düzende gösterir. Yani, öğe bir satırdan sonra yeni bir satırda başlar ve tüm genişliği kaplar.
+inline: Öğeyi satır içi düzende gösterir. Diğer öğelerle aynı satırda görüntülenir ve sadece içeriğin gerektirdiği kadar yer kaplar.
+inline-block: Öğeyi satır içi blok düzende gösterir. Diğer öğelerle aynı satırda görüntülenir, ancak blok öğeler gibi genişlik, yükseklik ve dış kenar boşluklarını ayarlamak için kullanılabilir.
+none: Öğeyi görünmez hale getirir. Sayfa düzeninde yer kaplamaz.
+flex: Öğeyi esnek bir konteyner olarak görüntüler. İçeriğin esnek bir şekilde düzenlenmesini sağlar.
+grid: Öğeyi bir grid konteyneri olarak görüntüler. İçeriği bir ızgara (satır ve sütunlar) düzeninde yerleştirmeyi sağlar.*/
+                display: block;
+            }
             .thumbnail-1{
                 width: 300px;
                 /*object-fit: contain;object-fit, CSS ile kullanılan bir özelliktir ve bir resmin veya medya öğesinin (video, iframe, vb.) bir konteyner içinde nasıl uygun şekilde sığdırılacağını belirler. Bu özellik, genellikle bir <img> etiketi veya bir background-image olarak kullanılan resimler için kullanılır.*/
@@ -13,21 +38,37 @@ cover: Resim, konteynerin içine tam olarak sığacak şekilde boyutlandırılı
 none: Resim, boyutlandırılmaz ve orijinal boyutunda görünür. Eğer resim konteynerden büyükse, kesilebilir.
 scale-down: Resim, none ve contain değerleri arasında en uygun olanı seçilerek boyutlandırılır.*/
                 /*object-position: center bottom;object-position, CSS ile kullanılan bir özelliktir ve bir resmin veya medya öğesinin (video, iframe, vb.) konteyner içinde hangi konumda yer alacağını belirler. */
+            display: block;
             }
-            .search_bar{
-                border: 0.8px;
-                border-radius: 18px;
-                border-color: black;
-                margin-left: 10px;
-                font-size: 20px;
-                padding: 5px;
-                height: 15px;
+            
+            .video_title{/*paragraph elementleri default olarak block ozellige sahibdir*/
+                width: 300px;
+                font-size: 14px;
+                font-weight: 700;
+            }
+            .video_author,
+            .video_stats{
+                font-size: 12px;
             }
         </style>
     </head>
     <body>
+        <!--HTML'de 3 tip element vardir:
+        1. block elemet - takes up entire line(ornek: p, )
+        2. inline-block element - only takes up as much space as needed (ornek: img, input)
+        3. inline element - appear within a line of text(ornek: strong, u)-->
+        <input class="search_bar" type="text" placeholder="Search">
         <img class="thumbnail-1" src = "thumbnails/thumbnail-1.webp"><!--Bu HTML kodu, bir web sayfasında "thumbnail-1.webp" adlı bir resmi görüntülemek için <img> etiketini kullanır. <img> etiketi, bir görüntünün veya resmin belirli bir web sayfasında görüntülenmesini sağlar.
          src özelliği, görüntünün dosya yolunu veya URL'sini belirtir. Bu örnekte "thumbnail-1.webp" dosyasının bulunduğu yolu veya web adresini belirtir.-->
-        <input class="search_bar" type="text" placeholder="Search">
-        </body>
+       
+        <p class = "video_title">  
+            Talking Tech and AI with Google CEO Sundar Pichai!
+        </p>
+        <p class = "video_author">
+            Marques Brownlee
+        </p>
+        <p class = "video_stats">
+            3.4M views · 6 months ago
+        </p>
+    </body>
 </html>
