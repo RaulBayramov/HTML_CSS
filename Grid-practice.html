@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Grid</title>
+    </head>
+    <body style="padding-bottom: 1000px;">
+        <div style="display: grid; grid-template-columns: 100px 100px;
+        margin-bottom: 10px;">
+            <div style="background-color: aqua;">div1</div>
+            <div style="background-color: bisque;">div2</div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 100px 100px 1fr;
+        margin-bottom: 10px;">
+            <div style="background-color: aqua;">div1</div>
+            <div style="background-color: bisque;">div2</div>
+            <div style="background-color: aqua;">div3</div>
+            <div style="background-color: bisque;">div4</div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 2fr 1fr;
+        margin-bottom: 10px;">
+            <div style="background-color: aqua;">div1</div>
+            <div style="background-color: bisque;">div2</div>
+            <div style="background-color: aqua;">div3</div>
+            <div style="background-color: bisque;">div4</div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr;
+        margin-bottom: 10px; grid-template-rows: 300px 300px 300px;
+        column-gap: 20px; row-gap: 40px;">
+            <div style="background-color: aqua;">div1</div>
+            <div style="background-color: bisque;">div2</div>
+            <div style="background-color: aqua;">div3</div>
+            <div style="background-color: bisque;">div4</div>
+            <div style="background-color: aqua;">div5</div>
+            <div style="background-color: bisque;">div6</div>
+        </div>
+        <div style="display: grid;">
+            <div>
+                div1</div>
+            <div>
+                div2</div>
+        </div>
+    </body>
+</html>
+<!--
+    CSS Grid Layout, HTML ve CSS kullanarak web sayfalarının düzenini oluşturmak için güçlü bir araçtır. Bu, bir sayfayı veya bileşeni satır ve sütunlar şeklinde düzenlemek için kullanılır ve iç içe geçmiş düzenler oluşturmak için idealdir.
+
+CSS Grid'in temel bileşenleri şunlardır:
+
+Grid Container (Grid Konteyner): Bir grid'i oluşturmak için kullanılan bir konteyner öğesi. display: grid; veya display: inline-grid; özelliğiyle bir öğeye grid özellikleri uygulanarak oluşturulur.
+
+Grid Items (Grid Öğeleri): Grid'in hücreleri veya kutuları. Grid özelliklerine sahip bir konteynerin içindeki herhangi bir öğe, bir grid öğesi olarak kabul edilir.
+
+CSS Grid Layout'in temel özellikleri şunlardır:
+
+grid-template-columns: Sütunların genişliğini belirler.
+grid-template-rows: Satırların yüksekliğini belirler.
+grid-gap: Sütunlar ve satırlar arasındaki boşluğu belirler.
+grid-column ve grid-row: Bir öğenin hangi sütunlar ve satırlar arasında yer aldığını belirler.
+
+-->

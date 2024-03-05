@@ -4,31 +4,27 @@
         <title>Exercise 9</title>
         <style>
             .twitter_demo{
-                width: 100%;
-                margin-left: 10px;
-                margin-bottom: 30px;
+                display: grid;
+                row-gap: 30px;
+            }
+            .accounts{
+                margin-top: 20px;
+                display: grid;
+                grid-template-rows: 1fr 1fr;
+                row-gap: 12px;
             }
             .user1{
-                width: 100%;
-                margin-top: 20px;
+                display: grid;
+                grid-template-columns: 60px 1fr 1fr;
+                column-gap: 10px;
+                min-width: 400px;
+                max-width: 1000px;
             }
-            .profile_photo_container{
-                width: 100%;
-                width: 60px;
-                display: inline-block;
-                vertical-align: top;
-                margin-right: 15px;
-            }
+
             .profile_photo{
                 width: 60px;
                 border: none;
                 border-radius: 50px;
-            }
-            .profile_info{
-                display: inline-block;
-                vertical-align: top;
-                margin-right: 50px;
-                width: 250px;
             }
             p{
                 margin-top: 0;
@@ -49,11 +45,6 @@
                 font-size: 18px;
                 margin-bottom: 5px;
             }
-            .follow_button_container{
-                display: inline-block;
-                object-fit: fill;
-                object-position: right;
-            }
             .follow_button{
                 font-size: 18px;
                 font-weight: bold;
@@ -67,25 +58,20 @@
                 padding-right: 18px;
                 margin-top: 10px;
             }
+            .video_grid{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                column-gap: 10px;
+                row-gap: 20px;
+            }
             .video_preview{
-                width: 630px;
-                margin-left: 10px;
-                margin-top: 20px;
-                display: inline-block;
-                vertical-align: top;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                column-gap: 20px;
             }
-            .video_thumbnail_container{
-                width: 290px;
-                margin-right: 15px;
-                vertical-align: top;
-                display: inline-block;
-            }
+
             .video_thumbnail{
-                width: 290px;
-            }
-            .video_info{
-                width: 300px;
-                display: inline-block;
+                width: 100%;
             }
             .video_title{
                 font-size: 20px;
@@ -102,119 +88,122 @@
             .video_author{
                 margin-bottom: 8px;
             }
-
+            
         </style>
     </head>
     <body>
         <div class="twitter_demo">
-            <div class="user1">
-                <div class="profile_photo_container">
-                    <img class="profile_photo" src="thumbnails/kitty-cat-kitten-pet-45201.jpeg">
+            <div class="accounts">
+                <div class="user1">
+                    <div class="profile_photo_container">
+                        <img class="profile_photo" src="thumbnails/kitty-cat-kitten-pet-45201.jpeg">
+                    </div>
+                    <div class="profile_info">
+                        <p class="user_name">oliver</p>
+                        <p class="tag_name">the cat</p>
+                        <p class="popularity">Popular</p>
+                    </div>
+                    <div class="follow_button_container">
+                        <button class="follow_button">Follow</button>
+                    </div>
                 </div>
-                <div class="profile_info">
-                    <p class="user_name">oliver</p>
-                    <p class="tag_name">the cat</p>
-                    <p class="popularity">Popular</p>
+                <div class="user1">
+                    <div class="profile_photo_container">
+                        <img class="profile_photo" src="channel_pictures/channel-1.jpeg">
+                    </div>
+                    <div class="profile_info">
+                        <p class="user_name">John Cowner</p>
+                        <p class="tag_name">Programist</p>
+                        <p class="popularity">Popular</p>
+                    </div>
+                    <div class="follow_button_container">
+                        <button class="follow_button">Follow</button>
+                    </div>
                 </div>
-                <div class="follow_button_container">
-                    <button class="follow_button">Follow</button>
+                <div class="user1">
+                    <div class="profile_photo_container">
+                        <img class="profile_photo" src="channel_pictures/channel-2.jpeg">
+                    </div>
+                    <div class="profile_info">
+                        <p class="user_name">Markiplier</p>
+                        <p class="tag_name">Influenser</p>
+                        <p class="popularity">Popular</p>
+                    </div>
+                    <div class="follow_button_container">
+                        <button class="follow_button">Follow</button>
+                    </div>
                 </div>
             </div>
-            <div class="user1">
-                <div class="profile_photo_container">
-                    <img class="profile_photo" src="channel_pictures/channel-1.jpeg">
+                <div class="video_grid">
+                <div class="video_preview">
+                    <div class="video_thumbnail_container">
+                        <img class="video_thumbnail" src="thumbnails/thumbnail-1.webp">
+                    </div>
+                    <div class="video_info">
+                        <p class="video_title">
+                            Talking Tech and AI with Google CEO Sundar Pichai!
+                        </p>
+                        <p class="video_author">
+                            Marques Brownlee
+                        </p>
+                        <p class="video_stats">
+                            3.4M views · 6 months ago
+                        </p>
+                    </div>
                 </div>
-                <div class="profile_info">
-                    <p class="user_name">John Cowner</p>
-                    <p class="tag_name">Programist</p>
-                    <p class="popularity">Popular</p>
+                
+                <div class="video_preview">
+                    <div class="video_thumbnail_container">
+                        <img class="video_thumbnail" src="thumbnails/thumbnail-2.webp">
+                    </div>
+                    <div class="video_info">
+                        <p class="video_title">                    
+                            Try Not To Laugh Challenge #9
+                        </p>
+                        <p class="video_author">
+                            Markiplier
+                        </p>
+                        <p class="video_stats">
+                            19M views · 4 years ago
+                        </p>
+                    </div>
                 </div>
-                <div class="follow_button_container">
-                    <button class="follow_button">Follow</button>
+                <div class="video_preview">
+                    <div class="video_thumbnail_container">
+                        <img class="video_thumbnail" src="thumbnails/thumbnail-1.webp">
+                    </div>
+                    <div class="video_info">
+                        <p class="video_title">
+                            Talking Tech and AI with Google CEO Sundar Pichai!
+                        </p>
+                        <p class="video_author">
+                            Marques Brownlee
+                        </p>
+                        <p class="video_stats">
+                            3.4M views · 6 months ago
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="user1">
-                <div class="profile_photo_container">
-                    <img class="profile_photo" src="channel_pictures/channel-2.jpeg">
-                </div>
-                <div class="profile_info">
-                    <p class="user_name">Markiplier</p>
-                    <p class="tag_name">Influenser</p>
-                    <p class="popularity">Popular</p>
-                </div>
-                <div class="follow_button_container">
-                    <button class="follow_button">Follow</button>
+                
+                <div class="video_preview">
+                    <div class="video_thumbnail_container">
+                        <img class="video_thumbnail" src="thumbnails/thumbnail-2.webp">
+                    </div>
+                    <div class="video_info">
+                        <p class="video_title">                    
+                            Try Not To Laugh Challenge #9
+                        </p>
+                        <p class="video_author">
+                            Markiplier
+                        </p>
+                        <p class="video_stats">
+                            19M views · 4 years ago
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-            <div>
-            <div class="video_preview">
-                <div class="video_thumbnail_container">
-                    <img class="video_thumbnail" src="thumbnails/thumbnail-1.webp">
-                </div>
-                <div class="video_info">
-                    <p class="video_title">
-                        Talking Tech and AI with Google CEO Sundar Pichai!
-                    </p>
-                    <p class="video_author">
-                        Marques Brownlee
-                    </p>
-                    <p class="video_stats">
-                        3.4M views · 6 months ago
-                    </p>
-                </div>
-            </div>
-            
-            <div class="video_preview">
-                <div class="video_thumbnail_container">
-                    <img class="video_thumbnail" src="thumbnails/thumbnail-2.webp">
-                </div>
-                <div class="video_info">
-                    <p class="video_title">                    
-                        Try Not To Laugh Challenge #9
-                    </p>
-                    <p class="video_author">
-                        Markiplier
-                    </p>
-                    <p class="video_stats">
-                        19M views · 4 years ago
-                    </p>
-                </div>
-            </div>
-            <div class="video_preview">
-                <div class="video_thumbnail_container">
-                    <img class="video_thumbnail" src="thumbnails/thumbnail-1.webp">
-                </div>
-                <div class="video_info">
-                    <p class="video_title">
-                        Talking Tech and AI with Google CEO Sundar Pichai!
-                    </p>
-                    <p class="video_author">
-                        Marques Brownlee
-                    </p>
-                    <p class="video_stats">
-                        3.4M views · 6 months ago
-                    </p>
-                </div>
-            </div>
-            
-            <div class="video_preview">
-                <div class="video_thumbnail_container">
-                    <img class="video_thumbnail" src="thumbnails/thumbnail-2.webp">
-                </div>
-                <div class="video_info">
-                    <p class="video_title">                    
-                        Try Not To Laugh Challenge #9
-                    </p>
-                    <p class="video_author">
-                        Markiplier
-                    </p>
-                    <p class="video_stats">
-                        19M views · 4 years ago
-                    </p>
-                </div>
-            </div>
-        </div>
+       
     </body>
 </html>
 

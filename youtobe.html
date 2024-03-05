@@ -29,7 +29,7 @@ grid: Öğeyi bir grid konteyneri olarak görüntüler. İçeriği bir ızgara (
                 display: block;
             }
             .thumbnail-1{
-                width: 300px;
+                width: 100%;
                 /*object-fit: contain;object-fit, CSS ile kullanılan bir özelliktir ve bir resmin veya medya öğesinin (video, iframe, vb.) bir konteyner içinde nasıl uygun şekilde sığdırılacağını belirler. Bu özellik, genellikle bir <img> etiketi veya bir background-image olarak kullanılan resimler için kullanılır.*/
                 /*object-fit özelliği, aşağıdaki değerlerden birini alabilir:
 fill: Resim, orijinal boyutunu korumadan, konteynerin boyutuna tam olarak sığacak şekilde gerilir veya sıkıştırılır. Oranlar bozulabilir.
@@ -38,7 +38,6 @@ cover: Resim, konteynerin içine tam olarak sığacak şekilde boyutlandırılı
 none: Resim, boyutlandırılmaz ve orijinal boyutunda görünür. Eğer resim konteynerden büyükse, kesilebilir.
 scale-down: Resim, none ve contain değerleri arasında en uygun olanı seçilerek boyutlandırılır.*/
                 /*object-position: center bottom;object-position, CSS ile kullanılan bir özelliktir ve bir resmin veya medya öğesinin (video, iframe, vb.) konteyner içinde hangi konumda yer alacağını belirler. */
-            display: block;
             }
             
             .video_title{/*paragraph elementleri default olarak block ozellige sahibdir*/
@@ -57,79 +56,160 @@ scale-down: Resim, none ve contain değerleri arasında en uygun olanı seçiler
             .video_author{
                 margin-bottom: 4px;
             }
-            .video_preview{
-                vertical-align: top;
-                display: inline-block;
-                margin-right: 15px;
-                width: 300px;
-            }
+
             .thumbnail_container{
                 margin-bottom: 12px;
             }
-            .all_about_video{
-                width: 300px;
-            }
-            .profile_photo_container{
-                width: 50px;
-                display: inline-block;
-                vertical-align: top;
+            .video_info_grid{
+                display: grid;
+                grid-template-columns: 50px 1fr;
+                margin-top: 12px;
             }
             .profile_photo{
                 width: 40px;
                 border-radius: 40px;
             }
-            .video_info{
-                display: inline-block;
-                width: 200px;
-            }
-            .thumbnail_container2{
-                margin-bottom: 12px;
+
+            .video_grid{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                column-gap: 20px;
+                row-gap: 40px;
             }
         </style>
     </head>
     <body>
         <input class="search_bar" type="text" placeholder="Search">
-        <div class ="video_preview">
-            <div class="thumbnail_container2"> 
-                <img class="thumbnail-1" src = "thumbnails/thumbnail-1.webp">
-            </div>
-            <div class="all_about_video">
-                <div class="profile_photo_container">
-                    <img class="profile_photo" src="channel_pictures/channel-1.jpeg">
+        <div class="video_grid">
+            <div class ="video_preview">
+                <div class="thumbnail_container2"> 
+                    <img class="thumbnail-1" src = "thumbnails/thumbnail-1.webp">
                 </div>
-                <div class="video_info">
-                    <p class = "video_title">  
-                        Talking Tech and AI with Google CEO Sundar Pichai!
-                    </p>
-                    <p class = "video_author">
-                        Marques Brownlee
-                    </p>
-                    <p class = "video_stats">
-                        3.4M views · 6 months ago
-                    </p>
+                <div class="video_info_grid">
+                    <div class="profile_photo_container">
+                        <img class="profile_photo" src="channel_pictures/channel-1.jpeg">
+                    </div>
+                    <div class="video_info">
+                        <p class = "video_title">  
+                            Talking Tech and AI with Google CEO Sundar Pichai!
+                        </p>
+                        <p class = "video_author">
+                            Marques Brownlee
+                        </p>
+                        <p class = "video_stats">
+                            3.4M views · 6 months ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class ="video_preview">
+                <div class="thumbnail_container2"> 
+                    <img class="thumbnail-1" src = "thumbnails/thumbnail-2.webp">
+                </div>
+                <div class="video_info_grid">
+                    <div class="profile_photo_container">
+                        <img class="profile_photo" src="channel_pictures/channel-2.jpeg">
+                    </div>
+                    <div class="video_info">
+                        <p class = "video_title">  
+                            Try Not To Laugh Challenge #9
+                        </p>
+                        <p class = "video_author">
+                            Markiplier
+                        </p>
+                        <p class = "video_stats">
+                            19M views · 4 years ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class ="video_preview">
+                <div class="thumbnail_container2"> 
+                    <img class="thumbnail-1" src = "thumbnails/thumbnail-1.webp">
+                </div>
+                <div class="video_info_grid">
+                    <div class="profile_photo_container">
+                        <img class="profile_photo" src="channel_pictures/channel-1.jpeg">
+                    </div>
+                    <div class="video_info">
+                        <p class = "video_title">  
+                            Talking Tech and AI with Google CEO Sundar Pichai!
+                        </p>
+                        <p class = "video_author">
+                            Marques Brownlee
+                        </p>
+                        <p class = "video_stats">
+                            3.4M views · 6 months ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class ="video_preview">
+                <div class="thumbnail_container2"> 
+                    <img class="thumbnail-1" src = "thumbnails/thumbnail-2.webp">
+                </div>
+                <div class="video_info_grid">
+                    <div class="profile_photo_container">
+                        <img class="profile_photo" src="channel_pictures/channel-2.jpeg">
+                    </div>
+                    <div class="video_info">
+                        <p class = "video_title">  
+                            Try Not To Laugh Challenge #9
+                        </p>
+                        <p class = "video_author">
+                            Markiplier
+                        </p>
+                        <p class = "video_stats">
+                            19M views · 4 years ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class ="video_preview">
+                <div class="thumbnail_container2"> 
+                    <img class="thumbnail-1" src = "thumbnails/thumbnail-1.webp">
+                </div>
+                <div class="video_info_grid">
+                    <div class="profile_photo_container">
+                        <img class="profile_photo" src="channel_pictures/channel-1.jpeg">
+                    </div>
+                    <div class="video_info">
+                        <p class = "video_title">  
+                            Talking Tech and AI with Google CEO Sundar Pichai!
+                        </p>
+                        <p class = "video_author">
+                            Marques Brownlee
+                        </p>
+                        <p class = "video_stats">
+                            3.4M views · 6 months ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class ="video_preview">
+                <div class="thumbnail_container2"> 
+                    <img class="thumbnail-1" src = "thumbnails/thumbnail-2.webp">
+                </div>
+                <div class="video_info_grid">
+                    <div class="profile_photo_container">
+                        <img class="profile_photo" src="channel_pictures/channel-2.jpeg">
+                    </div>
+                    <div class="video_info">
+                        <p class = "video_title">  
+                            Try Not To Laugh Challenge #9
+                        </p>
+                        <p class = "video_author">
+                            Markiplier
+                        </p>
+                        <p class = "video_stats">
+                            19M views · 4 years ago
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class ="video_preview">
-            <div class="thumbnail_container2"> 
-                <img class="thumbnail-1" src = "thumbnails/thumbnail-2.webp">
-            </div>
-            <div class="all_about_video">
-                <div class="profile_photo_container">
-                    <img class="profile_photo" src="channel_pictures/channel-2.jpeg">
-                </div>
-                <div class="video_info">
-                    <p class = "video_title">  
-                        Try Not To Laugh Challenge #9
-                    </p>
-                    <p class = "video_author">
-                        Markiplier
-                    </p>
-                    <p class = "video_stats">
-                        19M views · 4 years ago
-                    </p>
-                </div>
-            </div>
-        </div>
+        
     </body>
 </html>
