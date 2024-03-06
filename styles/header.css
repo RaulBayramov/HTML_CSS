@@ -1,0 +1,39 @@
+.search_bar{/*img input gibi elementler default olarak inline_blockdur*/
+    border: 0.8px;
+    border-radius: 18px;
+    border-color: black;
+    font-size: 20px;
+    padding: 5px;
+    height: 15px;
+    background-color: rgb(247, 247, 247);
+    /*display:
+CSS'de "display" özelliği, bir HTML öğesinin görüntülenme davranışını kontrol etmek için kullanılır. Bu özellik, bir öğenin nasıl yerleştirildiği, nasıl düzenlendiği ve nasıl göründüğü üzerinde önemli bir etkiye sahiptir.
+"display" özelliği, farklı değerler alabilir ve bu değerler öğenin nasıl görüneceğini belirler. En yaygın kullanılan "display" özelliklerinden bazıları şunlardır:
+block: Öğeyi blok düzende gösterir. Yani, öğe bir satırdan sonra yeni bir satırda başlar ve tüm genişliği kaplar.
+inline: Öğeyi satır içi düzende gösterir. Diğer öğelerle aynı satırda görüntülenir ve sadece içeriğin gerektirdiği kadar yer kaplar.
+inline-block: Öğeyi satır içi blok düzende gösterir. Diğer öğelerle aynı satırda görüntülenir, ancak blok öğeler gibi genişlik, yükseklik ve dış kenar boşluklarını ayarlamak için kullanılabilir.
+none: Öğeyi görünmez hale getirir. Sayfa düzeninde yer kaplamaz.
+flex: Öğeyi esnek bir konteyner olarak görüntüler. İçeriğin esnek bir şekilde düzenlenmesini sağlar.
+grid: Öğeyi bir grid konteyneri olarak görüntüler. İçeriği bir ızgara (satır ve sütunlar) düzeninde yerleştirmeyi sağlar.*/
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+    justify-content: space-between;
+}
+.left_section{
+    background-color: rgb(140, 129, 238);
+    width: 150px
+}
+.middle_section{
+    background-color: antiquewhite;
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 30px;
+    max-width: 500px;
+}
+.right_section{
+    background-color: rgb(140, 129, 238);
+    width: 200px
+}

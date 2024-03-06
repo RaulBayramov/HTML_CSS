@@ -1,0 +1,50 @@
+p{
+    font-family: Roboto, Arial;
+}
+.thumbnail-1{
+    width: 100%;
+    /*object-fit: contain;object-fit, CSS ile kullanılan bir özelliktir ve bir resmin veya medya öğesinin (video, iframe, vb.) bir konteyner içinde nasıl uygun şekilde sığdırılacağını belirler. Bu özellik, genellikle bir <img> etiketi veya bir background-image olarak kullanılan resimler için kullanılır.*/
+    /*object-fit özelliği, aşağıdaki değerlerden birini alabilir:
+fill: Resim, orijinal boyutunu korumadan, konteynerin boyutuna tam olarak sığacak şekilde gerilir veya sıkıştırılır. Oranlar bozulabilir.
+contain: Resim, orijinal boyutunu koruyarak, konteynerin içine sığacak şekilde boyutlandırılır. Boşluklar olabilir.
+cover: Resim, konteynerin içine tam olarak sığacak şekilde boyutlandırılır ve kesilmiş kısımlar olabilir. Oranlar korunur.
+none: Resim, boyutlandırılmaz ve orijinal boyutunda görünür. Eğer resim konteynerden büyükse, kesilebilir.
+scale-down: Resim, none ve contain değerleri arasında en uygun olanı seçilerek boyutlandırılır.*/
+    /*object-position: center bottom;object-position, CSS ile kullanılan bir özelliktir ve bir resmin veya medya öğesinin (video, iframe, vb.) konteyner içinde hangi konumda yer alacağını belirler. */
+}
+
+.video_title{/*paragraph elementleri default olarak block ozellige sahibdir*/
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 12px;
+}
+.video_author,
+.video_stats{
+    font-size: 12px;
+    color: rgb(96, 96, 96);
+    margin-top: 0;
+}
+.video_author{
+    margin-bottom: 4px;
+}
+
+.thumbnail_container{
+    margin-bottom: 12px;
+}
+.video_info_grid{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    margin-top: 12px;
+}
+.profile_photo{
+    width: 40px;
+    border-radius: 40px;
+}
+
+.video_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 40px;
+}

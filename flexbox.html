@@ -1,0 +1,103 @@
+<!DOCTYPE htm>
+<htm>
+    <head>
+        <title>Flexbox</title>
+    </head>
+    <body>
+
+<div style = "display: grid;
+grid-template-columns: 100px 100px 100px;
+justify-content: space-between;
+align-items: center;
+height: 70px;
+background-color: rgb(210, 153, 69);
+border-color: black;
+border: 5px;
+margin-bottom: 20px;
+">
+ <div style="background-color: #00ffff;
+ ">div1 example for everyday using</div>
+ <div style="background-color: antiquewhite;
+ ">div2</div>
+ <div style="background-color: #00ffff;
+ ">div3</div>
+    </div>
+
+    <div style = "display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background-color: rgb(210, 153, 69);
+    border-color: black;
+    border: 5px;
+    ">
+     <div style="background-color: #00ffff;
+     width: 100px;
+     ">div1 example for everyday using</div>
+     <div style="background-color: antiquewhite;
+     width: 100px;
+     ">div2</div>
+     <div style="background-color: #00ffff;
+     width: 100px;
+     ">div3</div>
+    </div>
+
+    <div style = "display: grid;
+grid-template-columns: 100px 1fr 2fr;
+justify-content: space-between;
+align-items: center;
+height: 70px;
+background-color: rgb(210, 153, 69);
+border-color: black;
+border: 5px;
+margin-bottom: 20px;
+">
+ <div style="background-color: #00ffff;
+ ">div1 example for everyday using</div>
+ <div style="background-color: antiquewhite;
+ ">div2</div>
+ <div style="background-color: #00ffff;
+ ">div3</div>
+    </div>
+
+    <div style = "display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background-color: rgb(210, 153, 69);
+    border-color: black;
+    border: 5px;
+    ">
+     <div style="background-color: #00ffff;
+     width: 100px;
+     ">div1 example for everyday using</div>
+     <div style="background-color: antiquewhite;
+     flex: 1;
+     ">div2</div>
+     <div style="background-color: #00ffff;
+     flex: 2;
+     ">div3</div>
+    </div>
+    </body>
+</htm>
+<!--
+    CSS Grid Layout ve Flexbox, web tasarımında düzen oluşturmak için kullanılan iki güçlü CSS özelliğidir. Her ikisi de farklı senaryolar için tasarlanmıştır ve farklı kullanım durumlarına sahiptir. İşte CSS Grid ve Flexbox arasındaki temel farklar:
+Yön:
+Flexbox, öğeleri bir tek boyutlu düzlemde (genellikle yatay veya dikey) hizalamak için tasarlanmıştır. Yani, öğeler yalnızca bir satırda veya sütunda hizalanabilir.
+Grid, öğeleri hem yatay hem de dikey yönde düzenlemek için tasarlanmıştır. Hem satırlar hem de sütunlar arasında karmaşık bir düzen oluşturulabilir.
+Düzen:
+
+Flexbox, içeriğin hizalanma, boşluklar ve esneme gibi bir dizi tek boyutlu düzen sorununu çözmek için idealdir. Örneğin, menüler, araç çubukları gibi tek sıra veya tek sütun düzenler için uygundur.
+Grid, karmaşık iki boyutlu düzenler oluşturmak için daha uygundur. Örneğin, web sayfalarının genel düzeni, galeriler, form düzenleri gibi karmaşık düzenler için idealdir.
+İç İçe Geçme:
+
+Flexbox, iç içe geçmiş düzenler oluşturmak için kullanılabilir, ancak bazı senaryolarda karmaşık hale gelebilir.
+Grid, iç içe geçmiş düzenleri oluşturmak için daha kolay ve esnek bir yaklaşım sunar. Bir grid öğesinin içinde başka bir grid öğesi yerleştirmek çok daha doğal ve kolaydır.
+Öğe Sıralaması:
+
+Flexbox, öğelerin sıralanma yöntemini kontrol etmek için order özelliğini kullanır.
+Grid, öğelerin sıralanmasını kontrol etmek için sütun ve satır numaralarını belirlemek için grid-column ve grid-row gibi özellikler kullanır.
+Genel olarak, Flexbox özellikle tek boyutlu düzenler için daha iyi bir seçenekken, Grid özellikle karmaşık iki boyutlu düzenler için daha uygundur. İdeal senaryoya bağlı olarak her ikisi de birlikte veya ayrı ayrı kullanılabilir.
+-->
